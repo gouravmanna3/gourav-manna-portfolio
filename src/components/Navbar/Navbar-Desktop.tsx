@@ -1,9 +1,9 @@
-import { NavlinkType, navLinks } from "../../utils/route";
+import { LinkType, navLinks } from "../../utils/route";
 
 const NavbarDesktop: React.FC = () => {
   return (
     <ul className="hidden lg:flex lg:items-center gap-20 text-sm">
-      {navLinks.map((link: NavlinkType) => {
+      {navLinks.map((link: LinkType) => {
         const { Icon, href, title } = link;
         return (
           <li>

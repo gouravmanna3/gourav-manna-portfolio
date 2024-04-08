@@ -8,13 +8,13 @@ import { downloadResume } from "../../utils/firebase/downloadFile";
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col items-center text-white font-notoSerif my-28 mr-64 ml-20">
+    <div className="flex flex-col md:items-center text-white font-notoSerif my-8 ml-8 mr-32 md:my-28 md:mr-64 md:ml-20">
       <motion.h1
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="text-5xl font-semibold tracking-wider py-8"
+        className="text-lg md:text-5xl font-semibold tracking-wider md:py-6"
       >
         Hi, I'm Gourav Manna
       </motion.h1>
@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="text-2xl font-bold tracking-wide"
+        className="text-[6px] md:text-2xl md:font-bold tracking-wider md:tracking-wide"
       >
         A Software Developer with a passion for learning and creating
       </motion.p>
@@ -32,27 +32,27 @@ const Hero: React.FC = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="bg-[#3D9970] hover:bg-[#408566] hover:shadow-[2px_2px_20px_2px_#A0DAA9;] flex gap-1 items-center text-white text-xs font-bold py-2 px-4 mt-6 rounded-full w-fit"
+        className="flex gap-1 items-center text-white text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-sm md:font-medium md:py-2 md:px-4 md:mt-6  bg-[#3D9970] hover:bg-[#408566] hover:shadow-[2px_2px_20px_2px_#A0DAA9;]"
         onClick={downloadResume}
       >
         Download CV
-        <FiDownload size={20} />
+        <FiDownload className="h-2 w-2 md:h-4 md:w-4" />
       </motion.button>
       <motion.div
         variants={fadeIn("up", 0.7)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
-        className="flex mt-6 gap-4 justify-center items-center"
+        className="flex mt-2 gap-2 md:mt-6 md:gap-4 items-center"
       >
-        <a href="#" className="bg-[#0077b5] p-1 rounded-[50%]">
-          <FaLinkedin size={20} />
+        <a href="#" className="">
+          <FaLinkedin className="h-2 w-2 md:h-6 md:w-6" />
         </a>
-        <a href="#" className="bg-[#333] p-1 rounded-[50%]">
-          <FaGithub size={20} />
+        <a href="#" className="">
+          <FaGithub className="h-2 w-2 md:h-6 md:w-6" />
         </a>
-        <a href="#" className="bg-[#1877f2] p-1 rounded-[50%]">
-          <FaFacebook size={20} />
+        <a href="#" className="">
+          <FaFacebook className="h-2 w-2 md:h-6 md:w-6" />
         </a>
       </motion.div>
     </div>

@@ -6,7 +6,7 @@ import Hero from "./components/Hero/Hero";
 function App() {
   return (
     <>
-      <section className="banner-background relative lg:min-h-[600px]">
+      <section className="banner-background relative lg:min-h-[600px] min-h-[250px]">
         <Navbar />
         <Hero />
       </section>
