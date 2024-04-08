@@ -1,13 +1,13 @@
 import Hamburger from "hamburger-react";
 import { useState } from "react";
-import { NavlinkType, navLinks } from "../../utils/route";
+import { LinkType, navLinks } from "../../utils/route";
 import { AnimatePresence, motion } from "framer-motion";
 
-const NavbarMobile = () => {
+const NavbarMobile: React.FC = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <div className="lg:hidden">
-      <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
+      <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -15,10 +15,10 @@ const NavbarMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-neutral-950 border-b border-b-white/20"
+            className="fixed left-0 shadow-4xl right-0 top-20 p-5 bg-neutral-950 border-b border-b-white/20"
           >
             <ul className="grid gap-2">
-              {navLinks.map((link: NavlinkType, idx) => {
+              {navLinks.map((link: LinkType, idx) => {
                 const { Icon } = link;
                 return (
                   <motion.li
@@ -40,7 +40,7 @@ const NavbarMobile = () => {
                       <span className="flex gap-1 text-lg text-white">
                         {link.title}
                       </span>
-                      <Icon className="text-xl" />
+                      <Icon className="text-xl text-white" />
                     </a>
                   </motion.li>
                 );

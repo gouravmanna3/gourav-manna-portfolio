@@ -1,32 +1,37 @@
-import { FaUser } from "react-icons/fa";
+import { ImUser } from "react-icons/im";
 import { IconType } from "react-icons";
+import { MdOutlineWork } from "react-icons/md";
+import { FaLaptopCode } from "react-icons/fa";
+import { BiSolidMessage } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 
-export interface NavlinkType {
+export interface LinkType {
   title: String;
   href: string;
   Icon: IconType;
 }
 
-export const navLinks: NavlinkType[] = [
+export const navLinks: LinkType[] = [
   {
     title: "About",
     href: "#",
-    Icon: FaUser,
+    Icon: ImUser,
   },
   {
     title: "Experience",
     href: "#",
-    Icon: FaUser,
+    Icon: MdOutlineWork,
   },
   {
     title: "Projects",
     href: "#",
-    Icon: FaUser,
+    Icon: FaLaptopCode,
   },
-
   {
     title: "Contact",
     href: "#",
-    Icon: FaUser,
+    Icon: BiSolidMessage,
   },
 ];
