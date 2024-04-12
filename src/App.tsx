@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 import "./App.css";
 import Hero from "./components/Hero/Hero";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Hero />
       </section>
+      <AboutMe />
     </>
   );
 }

@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         variants={fadeIn("up", 0.4)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="text-lg md:text-5xl font-semibold tracking-wider md:py-6"
       >
         Hi, I'm Gourav Manna
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         variants={fadeIn("up", 0.5)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="text-[6px] md:text-2xl md:font-bold tracking-wider md:tracking-wide"
       >
         A Software Developer with a passion for learning and creating
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         variants={fadeIn("up", 0.6)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="flex gap-1 items-center text-white text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-sm md:font-medium md:py-2 md:px-4 md:mt-6  bg-[#3D9970] hover:bg-[#408566] hover:shadow-[2px_2px_20px_2px_#A0DAA9;]"
         onClick={downloadResume}
       >
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
         variants={fadeIn("up", 0.7)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.7 }}
         className="flex mt-2 gap-2 md:mt-6 md:gap-4 items-center"
       >
         <a href="#" className="">
