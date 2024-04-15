@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col md:items-center text-white font-notoSerif my-8 ml-8 mr-32 md:my-28 md:mr-64 md:ml-20">
       <motion.h1
-        variants={fadeIn("up", 0.4)}
+        variants={fadeIn("right", 0.4)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         Hi, I'm Gourav Manna
       </motion.h1>
       <motion.p
-        variants={fadeIn("up", 0.5)}
+        variants={fadeIn("right", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         A Software Developer with a passion for learning and creating
       </motion.p>
       <motion.button
-        variants={fadeIn("up", 0.6)}
+        variants={fadeIn("left", 0.6)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}

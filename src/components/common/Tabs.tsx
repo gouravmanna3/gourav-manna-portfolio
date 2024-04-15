@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 interface TabsProps {
   children: React.ReactElement<TabProps>[];
@@ -21,17 +22,17 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto">
-      <div className="flex border-b border-gray-300">
+    <div className="">
+      <div className="flex border rounded-xl bg-[#EEEEEE] text-slate-700">
         {children.map((child: React.ReactElement<TabProps>) => (
           <button
             key={child.props.label}
             onClick={(e) => handleClick(e, child.props.label)}
             className={`${
               activeTab === child.props.label
-                ? "border-b-2 border-purple-500"
+                ? "rounded-lg bg-[#58A399] text-white shadow-xl"
                 : ""
-            } flex-1 text-gray-700 font-medium py-2`}
+            } flex-1 text-md font-medium py-2 m-1 border-0 cursor-pointer`}
           >
             {child.props.label}
           </button>
@@ -39,7 +40,20 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
       </div>
       {children.map((child: React.ReactElement<TabProps>) => {
         if (child.props.label === activeTab) {
-          return <div key={child.props.label}>{child.props.children}</div>;
+          return (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 0.6,
+                ease: "linear",
+              }}
+              key={child.props.label}
+              className="shadow-lg mt-2 px-6 border text-gray-700 rounded-lg"
+            >
+              {child.props.children}
+            </motion.div>
+          );
         }
         return null;
       })}

@@ -1,46 +1,51 @@
+import { motion } from "framer-motion";
 import myPhoto from "../../assets/me.jpeg";
 import { Tabs, Tab } from "../common/Tabs";
 
+import BasicInfo from "./BasicInfo";
+import Qualifications from "./Qualifications";
+import { fadeIn } from "../../utils/variants";
+
 const AboutMe = () => {
   return (
-    <section className="p-4 mt-2 font-notoSerif">
-      <div className="w-fit m-auto">
-        <h4 className="text-xs">&lt;h1&gt;</h4>
-        <h1 className=" text-3xl font-bold">About me</h1>
-        <h4 className="text-xs">&lt;/h1&gt;</h4>
+    <section className="p-6 bg-light font-notoSerif ">
+      <div className="w-fit mx-auto mb-6 md:my-4">
+        <h1 className=" text-3xl font-bold font-permanentMarker tracking-widest">
+          About me
+        </h1>
       </div>
-      <div className="flex flex-col xl:flex-row justify-evenly">
-        <div className="p-6 relative">
-          <div className="m-6">
+      <div className="flex flex-wrap gap-8 justify-center">
+        <div className="px-6">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.3 }}
+            className="mx-6"
+          >
             <img
               src={myPhoto}
               alt="my_photo"
-              className="object-scale-down rounded-full h-auto w-52"
+              className=" rounded-full h-auto w-72 shadow-2xl"
             />
-          </div>
+          </motion.div>
         </div>
-        <div className="p-4">
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.3 }}
+          className="md:p-6 md:w-[630px] md:ml-12"
+        >
           <Tabs>
             <Tab label="Basic Info">
-              <div className="py-4">
-                <p>
-                  With three years of experience, I specialize in frontend
-                  development, consistently delivering top-notch work in web
-                  technologies
-                </p>
-              </div>
+              <BasicInfo />
             </Tab>
             <Tab label="Qualifications">
-              <div className="py-4">
-                <p>
-                  With five years of experience, I specialize in frontend
-                  development, consistently delivering top-notch work in web
-                  technologies
-                </p>
-              </div>
+              <Qualifications />
             </Tab>
           </Tabs>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
