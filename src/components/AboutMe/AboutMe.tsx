@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <section className="p-6 bg-light font-notoSerif ">
       <div className="w-fit mx-auto mb-6 md:my-4">
-        <h1 className=" text-3xl font-bold font-permanentMarker tracking-widest">
+        <h1 className=" text-4xl font-bold font-permanentMarker tracking-widest">
           About me
         </h1>
       </div>
