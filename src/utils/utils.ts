@@ -1,6 +1,9 @@
 import { IconType } from "react-icons";
 import { FaUserAlt, FaHome } from "react-icons/fa";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa6";
 import react from "../assets/react.svg";
 import html from "../assets/html5.svg";
 import css from "../assets/css.svg";
@@ -8,6 +11,14 @@ import javascript from "../assets/javascript.svg";
 import typescript from "../assets/typescript.svg";
 import redux from "../assets/redux.svg";
 import tailwindcss from "../assets/tailwind-css.svg";
+import nodejs from "../assets/node-js.svg";
+import mongodb from "../assets/mongodb.svg";
+import python from "../assets/python.svg";
+import sass from "../assets/sass.svg";
+import firebase from "../assets/firebase.svg";
+import git from "../assets/git.svg";
+import jest from "../assets/jest.svg";
+import { TestimonialProps } from "../components/Testimonials/Testimonials.types";
 
 export interface InfoType {
   icon: IconType;
@@ -35,6 +46,21 @@ const infoData: InfoType[] = [
   {
     icon: FaHome,
     text: "3825 S Emporia Way, CO, USA",
+  },
+];
+
+const sociaLinks = [
+  {
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/in/gourav-manna-6363a1160/",
+  },
+  {
+    icon: FaGithub,
+    url: "https://github.com/gouravmanna3",
+  },
+  {
+    icon: FaFacebook,
+    url: "https://www.facebook.com/gourav.manna.589/",
   },
 ];
 
@@ -85,7 +111,7 @@ const skills: SkillsType[] = [
     title: "Redux",
   },
   {
-    image: html,
+    image: nodejs,
     title: "Node.js",
   },
   {
@@ -93,29 +119,64 @@ const skills: SkillsType[] = [
     title: "Next.js",
   },
   {
-    image: javascript,
+    image: mongodb,
     title: "MongoDB",
   },
   {
-    image: typescript,
+    image: git,
     title: "Git",
   },
   {
-    image: react,
+    image: python,
     title: "Python",
   },
   {
-    image: redux,
+    image: jest,
     title: "Jest",
   },
   {
-    image: html,
+    image: sass,
     title: "SASS",
   },
   {
-    image: html,
+    image: firebase,
     title: "Firebase",
+  },
+  {
+    image: tailwindcss,
+    title: "Tailwind",
   },
 ];
 
-export { infoData, educationData, skills };
+const testimonialData: TestimonialProps[] = [
+  {
+    name: "ABC",
+    review:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
+    role: "Lead Software Engineer",
+    organization: "Intralinks",
+  },
+  {
+    name: "DEF",
+    review:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
+    role: "Senior Software Engineer",
+    organization: "Intralinks",
+  },
+  {
+    name: "GHI",
+    review:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
+    role: "Software Engineer",
+    organization: "Thoughtworks",
+  },
+  {
+    name: "JKL",
+    review:
+      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
+    role: "Software Engineer",
+    organization: "Medpace",
+  },
+];
+
+export { infoData, sociaLinks, educationData, skills, testimonialData };

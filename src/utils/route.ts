@@ -15,22 +15,22 @@ export interface LinkType {
 
 export const navLinks: LinkType[] = [
   {
-    title: "About",
+    title: "ABOUT",
     href: "#",
     Icon: ImUser,
   },
   {
-    title: "Experience",
+    title: "EXPERIENCE",
     href: "#",
     Icon: MdOutlineWork,
   },
   {
-    title: "Projects",
+    title: "PROJECTS",
     href: "#",
     Icon: FaLaptopCode,
   },
   {
-    title: "Contact",
+    title: "CONTACT",
     href: "#",
     Icon: BiSolidMessage,
   },

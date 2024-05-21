@@ -12,9 +12,15 @@ export default {
       fontFamily: {
         notoSerif: ["Noto Serif", "serif"],
         permanentMarker: ["Permanent Marker", "cursive"],
+        robotoSlab: ["Roboto Slab", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       height: {
         inherit: "inherit",
+      },
+      colors: {
+        //turquoise: "#48D1CC",
+        turquoise: "#9df9ef",
       },
     },
   },

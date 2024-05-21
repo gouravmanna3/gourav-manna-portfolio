@@ -2,10 +2,10 @@ import FileSaver from "file-saver";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { app } from "./firebase.config";
 
-export const downloadResume = () => {
+export const downloadFile = (fileUrl: string) => {
   // Create a reference to the file we want to download
   const storage = getStorage(app, "gs://resume-6478a.appspot.com");
-  const resumeRef = ref(storage, "/resume/Gourav Manna Resume.pdf");
+  const resumeRef = ref(storage, fileUrl);
 
   getDownloadURL(resumeRef)
     .then((url) => {

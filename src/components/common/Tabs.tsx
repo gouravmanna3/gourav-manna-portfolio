@@ -23,16 +23,16 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
 
   return (
     <div className="">
-      <div className="flex border rounded-xl bg-[#EEEEEE] text-slate-700">
+      <div className="flex text-slate-300">
         {children.map((child: React.ReactElement<TabProps>) => (
           <button
             key={child.props.label}
             onClick={(e) => handleClick(e, child.props.label)}
             className={`${
               activeTab === child.props.label
-                ? "rounded-lg bg-[#58A399] text-white shadow-xl"
+                ? "rounded-lg bg-[#3D9970] text-white shadow-xl"
                 : ""
-            } flex-1 text-md font-medium py-2 m-1 border-0 cursor-pointer`}
+            } flex-1 text-md font-medium py-2 m-1 cursor-pointer`}
           >
             {child.props.label}
           </button>
@@ -49,7 +49,7 @@ const Tabs: React.FC<TabsProps> = ({ children }) => {
                 ease: "linear",
               }}
               key={child.props.label}
-              className="shadow-lg mt-2 px-6 border text-gray-700 rounded-lg"
+              className="shadow-lg mt-2 px-2 text-gray-700 rounded-lg"
             >
               {child.props.children}
             </motion.div>
