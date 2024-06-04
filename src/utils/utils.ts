@@ -15,7 +15,6 @@ import nodejs from "../assets/node-js.svg";
 import mongodb from "../assets/mongodb.svg";
 import python from "../assets/python.svg";
 import sass from "../assets/sass.svg";
-import firebase from "../assets/firebase.svg";
 import git from "../assets/git.svg";
 import jest from "../assets/jest.svg";
 import django from "../assets/django.svg";
