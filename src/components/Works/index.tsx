@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import project from "../../assets/pp.jpg";
+import { FaCode } from "react-icons/fa";
+import shrink from "../../assets/shrink-meet.png";
+import portfolio from "../../assets/portfolio.png";
+import expenseTracker from "../../assets/expenseTracker.png";
 import { fadeIn } from "../../utils/variants";
 
 const Works = () => {
   return (
-    <div className="p-6 md:p-10 text-white">
+    <div className="p-6 md:p-10 text-white" id="projects">
       <h1 className="text-3xl md:text-5xl font-bold font-notoSerif tracking-wider text-center">
         My Latest Works
       </h1>
@@ -21,17 +24,23 @@ const Works = () => {
           <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
           <img
             className="group-hover:scale-125 transition-all duration-500"
-            src={project}
+            src={expenseTracker}
             alt="projects"
           />
           <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-            <span className="bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
-              Shrink Meet
+            <span className="text-3xl bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
+              Dollar Tracker
             </span>
           </div>
 
           <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-            <span className="text-3xl text-white">Project Title</span>
+            <a
+              href="https://github.com/gouravmanna3/my-dollars-tracker"
+              className="text-xl text-white hover:cursor-pointer"
+              target="_blank"
+            >
+              <FaCode />
+            </a>
           </div>
         </motion.div>
 
@@ -46,17 +55,23 @@ const Works = () => {
           <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
           <img
             className="group-hover:scale-125 transition-all duration-500"
-            src={project}
+            src={portfolio}
             alt="projects"
           />
           <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-            <span className="bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-3xl bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
               Gourav's Portfolio
             </span>
           </div>
 
           <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-            <span className="text-3xl text-white">Project Title</span>
+            <a
+              href="https://github.com/gouravmanna3/gourav-manna-portfolio"
+              className="text-xl text-white hover:cursor-pointer"
+              target="_blank"
+            >
+              <FaCode />
+            </a>
           </div>
         </motion.div>
 
@@ -71,17 +86,23 @@ const Works = () => {
           <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
           <img
             className="group-hover:scale-125 transition-all duration-500"
-            src={project}
+            src={shrink}
             alt="projects"
           />
           <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-            <span className="bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
-              WeatherWise App
+            <span className="text-3xl bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
+              Shrink Meet
             </span>
           </div>
 
           <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-            <span className="text-3xl text-white">Project Title</span>
+            <a
+              href="https://github.com/gouravmanna3/shrink-meet-app"
+              className="text-xl text-white hover:cursor-pointer"
+              target="_blank"
+            >
+              <FaCode />
+            </a>
           </div>
         </motion.div>
       </section>

@@ -19,8 +19,8 @@ const Testimonials = () => {
   };
   return (
     <div className="container my-12 mx-auto md:px-6">
-      <section className="">
-        <h2 className="mb-12 md:text-5xl font-bold font-notoSerif tracking-wider text-center">
+      <section className="text-white">
+        <h2 className="mb-12 text-2xl md:text-5xl font-bold font-notoSerif tracking-wider text-center">
           What others say about me
         </h2>
 

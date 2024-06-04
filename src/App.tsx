@@ -20,8 +20,8 @@ function App() {
       <Skills />
       <Experience />
       <Works />
-      {/* <Testimonials />
-      <ContactMe /> */}
+      <Testimonials />
+      <ContactMe />
       <footer className="bg-white shadow text-center dark:bg-gray-800">
         <div className="w-full mx-auto max-w-screen-xl p-4">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">

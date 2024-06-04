@@ -8,7 +8,7 @@ import { fadeIn } from "../../utils/variants";
 
 const AboutMe = () => {
   return (
-    <section className="p-6 font-notoSerif text-white">
+    <section id="about" className="p-6 font-notoSerif text-white">
       <div className="w-fit mx-auto mb-6 md:my-4">
         <h1 className="text-3xl md:text-5xl font-bold font-notoSerif tracking-wider">
           About me

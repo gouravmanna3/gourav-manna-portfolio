@@ -18,6 +18,7 @@ import sass from "../assets/sass.svg";
 import firebase from "../assets/firebase.svg";
 import git from "../assets/git.svg";
 import jest from "../assets/jest.svg";
+import django from "../assets/django.svg";
 import { TestimonialProps } from "../components/Testimonials/Testimonials.types";
 
 export interface InfoType {
@@ -131,16 +132,16 @@ const skills: SkillsType[] = [
     title: "Python",
   },
   {
+    image: django,
+    title: "Django",
+  },
+  {
     image: jest,
     title: "Jest",
   },
   {
     image: sass,
     title: "SASS",
-  },
-  {
-    image: firebase,
-    title: "Firebase",
   },
   {
     image: tailwindcss,
@@ -150,32 +151,28 @@ const skills: SkillsType[] = [
 
 const testimonialData: TestimonialProps[] = [
   {
-    name: "ABC",
+    name: "Venkata Ramana",
     review:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
-    role: "Lead Software Engineer",
-    organization: "Intralinks",
-  },
-  {
-    name: "DEF",
-    review:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
+      "Gourav is a dedicated team player with strong communication skills and attention to detail, ensuring timely and high-quality project completion. His innovative problem-solving and creative solutions greatly benefited our team.",
     role: "Senior Software Engineer",
     organization: "Intralinks",
+    link: "https://www.linkedin.com/in/syama-veera-venkata-ramana-surisetti-2b16a6135/",
   },
   {
-    name: "GHI",
+    name: "Yash Mishra",
     review:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
-    role: "Software Engineer",
-    organization: "Thoughtworks",
+      "I met Gourav during our internship at Cognizant and was impressed by his exceptional UI development skills and understanding of UI/UX principles. He consistently delivered visually appealing, responsive interfaces. Beyond his technical abilities, Gourav is a collaborative team player. He would be a valuable addition to any team, and I highly recommend him for the role under consideration.",
+    role: "Full Stack Developer",
+    organization: "Capgemini",
+    link: "https://www.linkedin.com/in/yash-mishra-034374140/",
   },
   {
-    name: "JKL",
+    name: "Bhanu Prakash",
     review:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application",
-    role: "Software Engineer",
-    organization: "Medpace",
+      "I interned with Gourav Manna at Cognizant, where his technical skills and collaborative spirit stood out. He developed a full-stack project using Spring Boot and Angular, demonstrating his strong grasp of both front-end and back-end technologies. Gourav frequently helped other teams, ensuring project success.",
+    role: "React Developer",
+    organization: "Cognizant",
+    link: "https://www.linkedin.com/in/bhanuprakashreddy0240/",
   },
 ];
 

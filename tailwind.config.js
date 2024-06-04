@@ -14,6 +14,7 @@ export default {
         permanentMarker: ["Permanent Marker", "cursive"],
         robotoSlab: ["Roboto Slab", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        dancingScript: ["Dancing Script", "cursive"],
       },
       height: {
         inherit: "inherit",

@@ -1,6 +1,3 @@
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa6";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
@@ -33,7 +30,9 @@ const Hero: React.FC = () => {
         viewport={{ once: true, amount: 0.7 }}
         className="transition-colors duration-300 ease-in-out bg-[#3D9970] hover:bg-[#3a7a5d] flex gap-1 items-center text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-lg md:font-semibold md:py-3 md:px-4 md:mt-6 "
         // className="transition-colors duration-300 ease-in-out flex gap-1 items-center text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-lg md:font-semibold md:py-3 md:px-4 md:mt-6  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-[#3a7a5d] text-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300"
-        onClick={() => downloadFile("/resume/Gourav Manna Resume.pdf")}
+        onClick={() =>
+          downloadFile("/resume/Gourav_FullStack_Developer_Resume.pdf")
+        }
       >
         Download CV
         <FiDownload className="h-2 w-2 md:h-4 md:w-4" />

@@ -3,4 +3,5 @@ export interface TestimonialProps {
   name: string;
   role: string;
   organization: string;
+  link: string;
 }

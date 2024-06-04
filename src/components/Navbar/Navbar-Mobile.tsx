@@ -2,6 +2,7 @@ import Hamburger from "hamburger-react";
 import { useState } from "react";
 import { LinkType, navLinks } from "../../utils/route";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const NavbarMobile: React.FC = () => {
   const [isOpen, setOpen] = useState(false);
@@ -32,16 +33,18 @@ const NavbarMobile: React.FC = () => {
                     }}
                     className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700"
                   >
-                    <a
+                    <Link
                       onClick={() => setOpen((prev) => !prev)}
-                      className="flex items-center justify-between w-full p-5 rounded-xl bg-neutral-800"
-                      href={link.href}
+                      className="flex items-center justify-between w-full p-5 rounded-xl bg-neutral-800 hover:cursor-pointer"
+                      to={link.to}
+                      smooth={true}
+                      duration={500}
                     >
                       <span className="flex gap-1 text-lg text-white">
                         {link.title}
                       </span>
                       <Icon className="text-xl text-white" />
-                    </a>
+                    </Link>
                   </motion.li>
                 );
               })}

@@ -5,9 +5,10 @@ const Testimonial: React.FC<TestimonialProps> = ({
   name,
   role,
   organization,
+  link,
 }) => {
   return (
-    <section className="dark:bg-gray-900 font-notoSerif">
+    <section className="font-notoSerif">
       <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <figure className="max-w-screen-md mx-auto">
           <svg
@@ -22,19 +23,17 @@ const Testimonial: React.FC<TestimonialProps> = ({
             />
           </svg>
           <blockquote>
-            <p className="text-2xl font-medium text-gray-900 dark:text-white">
-              {`"${review}"`}
-            </p>
+            <p className="text-sm md:text-xl font-medium text-white">{`"${review}"`}</p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <img
               className="w-6 h-6 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+              src="https://as1.ftcdn.net/v2/jpg/02/01/92/42/1000_F_201924201_P6mGeFsOkpfcRGXWe3dC9uOey22lWLUm.jpg"
               alt="profile picture"
             />
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                {name}
+              <div className="pr-3 font-medium text-gray-900 dark:text-white cursor-pointer">
+                <a href={link}>{name}</a>
               </div>
               <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
                 {`${role} at ${organization}`}

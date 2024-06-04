@@ -3,35 +3,32 @@ import { IconType } from "react-icons";
 import { MdOutlineWork } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { BiSolidMessage } from "react-icons/bi";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa6";
 
 export interface LinkType {
   title: String;
-  href: string;
+  to: string;
   Icon: IconType;
 }
 
 export const navLinks: LinkType[] = [
   {
     title: "ABOUT",
-    href: "#",
+    to: "about",
     Icon: ImUser,
   },
   {
     title: "EXPERIENCE",
-    href: "#",
+    to: "experience",
     Icon: MdOutlineWork,
   },
   {
     title: "PROJECTS",
-    href: "#",
+    to: "projects",
     Icon: FaLaptopCode,
   },
   {
     title: "CONTACT",
-    href: "#",
+    to: "contact",
     Icon: BiSolidMessage,
   },
 ];
