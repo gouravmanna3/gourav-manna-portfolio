@@ -1,4 +1,3 @@
-import FileSaver from "file-saver";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import { app } from "./firebase.config";
 
