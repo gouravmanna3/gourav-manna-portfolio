@@ -2,18 +2,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 import { SkillsType, skills } from "../../utils/utils";
 
-const skillsStyle = {
-  backgroundImage:
-    "url('src/assets/skillsbg.jpg'), linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))",
-  backgroundBlendMode: "overlay",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-};
-
 const Skills = () => {
   return (
-    <div className="p-6 md:p-10 text-white bg-fixed" style={skillsStyle}>
+    <div className="p-6 md:p-10 text-white bg-fixed skillsSection">
       <h1 className="text-3xl md:text-5xl font-bold font-notoSerif tracking-wider text-center">
         Skills
       </h1>

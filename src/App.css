@@ -24,3 +24,17 @@ body {
     color: #9df9ef;
   }
 }
+
+.skillsSection {
+  background-position: center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/skillsbg.jpg"),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.1)
+    );
+}
