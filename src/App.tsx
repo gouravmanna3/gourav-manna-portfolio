@@ -29,10 +29,8 @@ function App() {
             <a href="https://flowbite.com/" className="hover:underline">
               Developed by Gourav with &#10084;
             </a>{" "}
-            Buy me a
             <a href="https://www.buymeacoffee.com/gouravmanna3">
-              {" "}
-              coffee &#9749;
+              Buy me a coffee &#9749;
             </a>
           </span>
         </div>

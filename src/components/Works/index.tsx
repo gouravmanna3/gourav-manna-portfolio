@@ -106,6 +106,9 @@ const Works = () => {
           </div>
         </motion.div>
       </section>
+      <h1 className="text-center m-4 md:m-8 font-notoSerif text-xs">
+        more projects coming soon...
+      </h1>
     </div>
   );
 };

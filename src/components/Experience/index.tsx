@@ -12,7 +12,7 @@ const Experience = () => {
       </h1>
       <div className="flex flex-col gap-12 md:flex-row justify-center mt-10">
         <motion.div
-          variants={fadeIn("left", 0.2)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.3 }}
@@ -101,7 +101,7 @@ const Experience = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true, amount: 0.3 }}
