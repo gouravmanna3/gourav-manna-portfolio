@@ -17,9 +17,9 @@ function App() {
         <Hero />
       </section>
       <AboutMe />
-      <section className="skillsSection">
-        <Skills />
-      </section>
+      {/* <section className="skillsSection"> */}
+      <Skills />
+      {/* </section> */}
       <Experience />
       <Works />
       <Testimonials />
