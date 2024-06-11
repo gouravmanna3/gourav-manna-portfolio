@@ -2,8 +2,15 @@
   "name": "gourav-portfolio",
   "homepage": "https://gouravmanna3.github.io/gourav-manna-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "author": "Gourav Manna",
+  "version": "1.0.0",
   "type": "module",
+  "description": "This portfolio is a reflection of my skills and experiences as a software engineer, and it showcases some of the projects I've worked on.",
+  "keywords": [
+    "portfolio",
+    "reactjs portfolio",
+    "software engineer portfolio"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
