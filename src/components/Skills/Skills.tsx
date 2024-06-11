@@ -4,7 +4,7 @@ import { SkillsType, skills } from "../../utils/utils";
 
 const Skills = () => {
   return (
-    <div className="p-6 md:p-10 text-white bg-fixed skillsSection">
+    <div className="p-6 md:p-10 text-white">
       <h1 className="text-3xl md:text-5xl font-bold font-notoSerif tracking-wider text-center">
         Skills
       </h1>

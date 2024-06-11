@@ -26,10 +26,6 @@ body {
 }
 
 .skillsSection {
-  background-position: center;
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url("./assets/skillsbg.jpg"),
     linear-gradient(
       to right,
@@ -37,4 +33,9 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.1)
     );
+  background-position: center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -17,7 +17,9 @@ function App() {
         <Hero />
       </section>
       <AboutMe />
-      <Skills />
+      <section className="skillsSection">
+        <Skills />
+      </section>
       <Experience />
       <Works />
       <Testimonials />
