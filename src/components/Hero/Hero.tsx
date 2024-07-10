@@ -1,10 +1,31 @@
+import { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/variants";
 import { downloadFile } from "../../utils/firebase/downloadFile";
 import { sociaLinks } from "../../utils/utils";
 
+const texts = ["Hello", "Hola", "Namaste", "Radhe Radhe"];
+
 const Hero: React.FC = () => {
+  const [currentText, setCurrentText] = useState(texts[0]);
+  const [showText, setShowText] = useState(true);
+  let currentIndex = 0;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowText(false);
+
+      setTimeout(() => {
+        currentIndex = (currentIndex + 1) % texts.length;
+        setCurrentText(texts[currentIndex]);
+        setShowText(true);
+      }, 1000);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col text-white font-notoSerif my-8 ml-8 mr-32 md:my-28 md:mr-64 md:ml-48 w-fit">
       <motion.div
@@ -14,10 +35,16 @@ const Hero: React.FC = () => {
         viewport={{ once: true, amount: 0.7 }}
       >
         <h3 className="text-[10px] md:text-2xl tracking-wider md:mb-4">
-          Hi, I'm
+          <span
+            className={`md:text-3xl transition-opacity duration-1000 ${
+              showText ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {currentText},
+          </span>
         </h3>
-        <h1 className="text-2xl md:text-6xl font-semibold tracking-wider md:mb-4 bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
-          Gourav Manna
+        <h1 className="text-2xl md:text-5xl font-semibold tracking-wider md:mb-4 bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
+          <span className="md:text-2xl text-white">I'm</span> Gourav Manna
         </h1>
         <p className="text-[10px] md:text-2xl tracking-wider md:tracking-wide">
           A Software Developer with a passion for learning and creating
