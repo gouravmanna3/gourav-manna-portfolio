@@ -1,6 +1,7 @@
 import { NavbarProps } from "./Navbar.types";
 import NavbarMobile from "./Navbar-Mobile";
 import NavbarDesktop from "./Navbar-Desktop";
+import Star from "./Star";
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
@@ -13,9 +14,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       </a>
       <div className="flex gap-8 lg:gap-48 items-center font-robotoSlab tracking-widest">
         <NavbarDesktop />
-        {/* <button className="bg-blue-700 text-white px-4 py-2 rounded font-bold">
-          Login
-        </button> */}
+        <Star />
         <NavbarMobile />
       </div>
     </nav>
