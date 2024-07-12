@@ -76,6 +76,7 @@ const Hero: React.FC = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
             href={socialLink.url}
+            key={socialLink.name}
           >
             <socialLink.icon className="h-3 w-3 md:h-7 md:w-7" />
           </motion.a>

@@ -51,14 +51,17 @@ const infoData: InfoType[] = [
 
 const sociaLinks = [
   {
+    name: "linkedin",
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/gourav-manna-6363a1160/",
   },
   {
+    name: "github",
     icon: FaGithub,
     url: "https://github.com/gouravmanna3",
   },
   {
+    name: "facebook",
     icon: FaFacebook,
     url: "https://www.facebook.com/gourav.manna.589/",
   },
@@ -150,6 +153,7 @@ const skills: SkillsType[] = [
 
 const testimonialData: TestimonialProps[] = [
   {
+    id: "1",
     name: "Venkata Ramana",
     review:
       "Gourav is a dedicated team player with strong communication skills and attention to detail, ensuring timely and high-quality project completion. His innovative problem-solving and creative solutions greatly benefited our team.",
@@ -158,6 +162,7 @@ const testimonialData: TestimonialProps[] = [
     link: "https://www.linkedin.com/in/syama-veera-venkata-ramana-surisetti-2b16a6135/",
   },
   {
+    id: "2",
     name: "Yash Mishra",
     review:
       "I met Gourav during our internship at Cognizant and was impressed by his exceptional UI development skills and understanding of UI/UX principles. He consistently delivered visually appealing, responsive interfaces. Beyond his technical abilities, Gourav is a collaborative team player. He would be a valuable addition to any team, and I highly recommend him for the role under consideration.",
@@ -166,6 +171,7 @@ const testimonialData: TestimonialProps[] = [
     link: "https://www.linkedin.com/in/yash-mishra-034374140/",
   },
   {
+    id: "3",
     name: "Bhanu Prakash",
     review:
       "I interned with Gourav Manna at Cognizant, where his technical skills and collaborative spirit stood out. He developed a full-stack project using Spring Boot and Angular, demonstrating his strong grasp of both front-end and back-end technologies. Gourav frequently helped other teams, ensuring project success.",

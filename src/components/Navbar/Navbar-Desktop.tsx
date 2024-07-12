@@ -7,7 +7,7 @@ const NavbarDesktop: React.FC = () => {
       {navLinks.map((link: LinkType) => {
         const { Icon, title, to } = link;
         return (
-          <li>
+          <li key={to}>
             <Link
               to={to}
               className="flex items-center gap-2 hover:text-[#3D9970] transition-colors duration-300 ease-in-out hover:cursor-pointer"

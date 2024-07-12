@@ -28,7 +28,7 @@ const Testimonials = () => {
         <div className="p-4 slider-container">
           <Slider {...settings}>
             {testimonialData.map((testimonial: TestimonialProps) => (
-              <div>
+              <div key={testimonial.id}>
                 <Testimonial {...testimonial} />
               </div>
             ))}
