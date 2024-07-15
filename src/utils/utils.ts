@@ -18,6 +18,7 @@ import sass from "../assets/sass.svg";
 import git from "../assets/git.svg";
 import jest from "../assets/jest.svg";
 import django from "../assets/django.svg";
+import angular from "../assets/angular.svg";
 import { TestimonialProps } from "../components/Testimonials/Testimonials.types";
 
 export interface InfoType {
@@ -55,11 +56,11 @@ const sociaLinks = [
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/gourav-manna-6363a1160/",
   },
-  {
-    name: "github",
-    icon: FaGithub,
-    url: "https://github.com/gouravmanna3",
-  },
+  // {
+  //   name: "github",
+  //   icon: FaGithub,
+  //   url: "https://github.com/gouravmanna3",
+  // },
   {
     name: "facebook",
     icon: FaFacebook,
@@ -106,6 +107,10 @@ const skills: SkillsType[] = [
     title: "TypeScript",
   },
   {
+    image: angular,
+    title: "Angular",
+  },
+  {
     image: react,
     title: "React",
   },
@@ -116,10 +121,6 @@ const skills: SkillsType[] = [
   {
     image: nodejs,
     title: "Node.js",
-  },
-  {
-    image: css,
-    title: "Next.js",
   },
   {
     image: mongodb,
