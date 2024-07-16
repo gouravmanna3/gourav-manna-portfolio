@@ -43,8 +43,9 @@ const Hero: React.FC = () => {
             {currentText},
           </span>
         </h3>
-        <h1 className="text-2xl md:text-5xl font-semibold tracking-wider md:mb-4 bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
-          <span className="md:text-2xl text-white">I'm</span> Gourav Manna
+        <h1 className="text-xl md:text-5xl font-semibold tracking-wider md:mb-4 bg-gradient-to-br from-green-400 to-blue-600 bg-clip-text text-transparent">
+          <span className="md:text-2xl text-lg text-white">I'm</span> Gourav
+          Manna
         </h1>
         <p className="text-[10px] md:text-2xl tracking-wider md:tracking-wide">
           A Software Developer with a passion for learning and creating
