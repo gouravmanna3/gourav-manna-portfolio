@@ -1,4 +1,3 @@
-import { downloadFile } from "../../utils/firebase/downloadFile";
 import {
   VerticalTimeline,
   VerticalTimelineElement,

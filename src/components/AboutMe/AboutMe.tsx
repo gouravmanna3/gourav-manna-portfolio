@@ -39,7 +39,7 @@ const AboutMe = () => {
             className="absolute top-0 h-auto w-56 md:w-72 "
           />
           <span className="mt-4 absolute text-base font-medium text-yellow-400 text-center">
-            Looking for a job and would greatly appreciate any referrals
+            /* Looking for a job and would greatly appreciate any referrals */
           </span>
         </motion.div>
         <motion.div

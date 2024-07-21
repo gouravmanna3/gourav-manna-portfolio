@@ -1,6 +1,10 @@
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { onValue } from "firebase/database";
-import { addStarCount, dataRef } from "../../utils/firebase/database";
+import {
+  addLocation,
+  addStarCount,
+  starRef,
+} from "../../utils/firebase/database";
 import { useEffect, useState } from "react";
 
 const Star = () => {
@@ -10,7 +14,7 @@ const Star = () => {
   useEffect(() => {
     const starClicked = localStorage.getItem("star");
     onValue(
-      dataRef,
+      starRef,
       (snapshot) => {
         const data = snapshot.val();
         setStarCount(data);
@@ -23,6 +27,7 @@ const Star = () => {
   const handleStarClick = () => {
     if (!starClicked) {
       addStarCount();
+      addLocation();
       setStarClicked((prev) => !prev);
       localStorage.setItem("star", "true");
     }
