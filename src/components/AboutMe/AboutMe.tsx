@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import myPhoto from "../../assets/about_gourav.jpg";
+import openToWork from "../../assets/open_to_work.png";
 import { Tabs, Tab } from "../common/Tabs";
 
 import BasicInfo from "./BasicInfo";
@@ -25,13 +26,21 @@ const AboutMe = () => {
             delay: 0.5,
             ease: "linear",
           }}
-          className=" m-4 md:m-6 shadow-[0_4px_6px_rgba(0,0,0,.3)] px-4 py-4 h-fit bg-white "
+          className=" m-4 md:m-6 md:w-80 h-72 md:h-fit relative"
         >
           <img
             src={myPhoto}
             alt="my_photo"
-            className="h-auto w-40 md:w-72 shadow-2xl "
+            className="relative md:h-72 w-56 h-56 md:w-72 rounded-full"
           />
+          <img
+            src={openToWork}
+            alt="my_photo"
+            className="absolute top-0 h-auto w-56 md:w-72 "
+          />
+          <span className="mt-4 absolute text-base font-medium text-yellow-400 text-center">
+            Looking for a job and would greatly appreciate any referrals
+          </span>
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0.3)}

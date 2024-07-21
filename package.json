@@ -31,6 +31,7 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
+    "react-vertical-timeline-component": "^3.6.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "@types/react-dom": "^18.2.24",
     "@types/react-scroll": "^1.8.10",
     "@types/react-slick": "^0.23.13",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
