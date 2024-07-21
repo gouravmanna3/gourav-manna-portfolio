@@ -1,17 +1,85 @@
-import { motion } from "framer-motion";
-import { fadeIn } from "../../utils/variants";
+import { downloadFile } from "../../utils/firebase/downloadFile";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { MdOutlineWork } from "react-icons/md";
 import thoughtworks_logo from "../../assets/thoughtworks.jpg";
 import intralinks from "../../assets/intralinks.png";
-import { downloadFile } from "../../utils/firebase/downloadFile";
+import cognizant from "../../assets/cognizant_logo.png";
+
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   return (
-    <div className="p-6 text-white" id="experience">
-      <h1 className="text-3xl md:text-5xl font-bold font-notoSerif tracking-wider text-center">
+    <div className="p-6 text-white font-notoSerif" id="experience">
+      <h1 className="text-3xl md:text-5xl font-bold tracking-wider text-center">
         Experience
       </h1>
       <div className="flex flex-col gap-12 md:flex-row justify-center mt-10">
-        <motion.div
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#3D9970", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid #3D9970" }}
+            date="Dec 2021 - July 2022"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<MdOutlineWork />}
+          >
+            <img
+              className="md:h-12 md:w-64 mb-4 mx-auto"
+              src={thoughtworks_logo}
+              alt="thoughtworks_logo"
+            />
+            <h3 className="vertical-timeline-element-title text-lg md:text-xl">
+              Application Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Hyderabad, India
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#3D9970", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid #3D9970" }}
+            date="Jan 2020 - Nov 2021"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<MdOutlineWork />}
+          >
+            <img
+              className="md:h-12 w-40 md:w-48 mb-4 mx-auto"
+              src={intralinks}
+              alt="intralinks_logo"
+            />
+            <h3 className="vertical-timeline-element-title text-[17px] md:text-xl">
+              Associate Software Engineer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Hyderabad, India
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#3D9970", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid #3D9970" }}
+            date="Jan 2019 - May 2019"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<MdOutlineWork />}
+          >
+            <img
+              className="md:h-12 md:w-40 mb-4 mx-auto"
+              src={cognizant}
+              alt="cognizant_logo"
+            />
+            <h3 className="vertical-timeline-element-title text-lg md:text-xl">
+              Internship
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Hyderabad, India
+            </h4>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+        {/* <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -194,7 +262,7 @@ const Experience = () => {
               </li>
             </ul>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { fadeIn } from "../../utils/variants";
 import { downloadFile } from "../../utils/firebase/downloadFile";
 import { sociaLinks } from "../../utils/utils";
 
-const texts = ["Hello", "Hola", "Namaste", "Radhe Radhe"];
+const texts = ["Hello", "Hola", "Radhe Radhe", "Namaste"];
 
 const Hero: React.FC = () => {
   const [currentText, setCurrentText] = useState(texts[0]);
@@ -57,7 +57,6 @@ const Hero: React.FC = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0.7 }}
         className="transition-colors duration-300 ease-in-out bg-[#3D9970] hover:bg-[#3a7a5d] flex gap-1 items-center text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-lg md:font-semibold md:py-3 md:px-4 md:mt-6 "
-        // className="transition-colors duration-300 ease-in-out flex gap-1 items-center text-[6px] py-1 px-2 mt-2 rounded-md w-fit md:gap-2 md:text-lg md:font-semibold md:py-3 md:px-4 md:mt-6  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-[#3a7a5d] text-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300"
         onClick={() =>
           downloadFile("/resume/Gourav_FullStack_Developer_Resume.pdf")
         }

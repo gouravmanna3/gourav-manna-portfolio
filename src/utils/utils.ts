@@ -1,7 +1,6 @@
 import { IconType } from "react-icons";
-import { FaUserAlt, FaHome } from "react-icons/fa";
+import { FaUserAlt, FaHome, FaGithub } from "react-icons/fa";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
-import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import react from "../assets/react.svg";
@@ -56,11 +55,11 @@ const sociaLinks = [
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/gourav-manna-6363a1160/",
   },
-  // {
-  //   name: "github",
-  //   icon: FaGithub,
-  //   url: "https://github.com/gouravmanna3",
-  // },
+  {
+    name: "github",
+    icon: FaGithub,
+    url: "https://github.com/gouravmanna3",
+  },
   {
     name: "facebook",
     icon: FaFacebook,
