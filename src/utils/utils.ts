@@ -3,6 +3,7 @@ import { FaUserAlt, FaHome, FaGithub } from "react-icons/fa";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 import react from "../assets/react.svg";
 import html from "../assets/html5.svg";
 import css from "../assets/css.svg";
@@ -59,6 +60,11 @@ const sociaLinks = [
     name: "github",
     icon: FaGithub,
     url: "https://github.com/gouravmanna3",
+  },
+  {
+    name: "leetcode",
+    icon: SiLeetcode,
+    url: "https://leetcode.com/u/gouravmanna3/",
   },
   {
     name: "facebook",

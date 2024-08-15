@@ -31,11 +31,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
               src="https://as1.ftcdn.net/v2/jpg/02/01/92/42/1000_F_201924201_P6mGeFsOkpfcRGXWe3dC9uOey22lWLUm.jpg"
               alt="profile picture"
             />
-            <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div className="pr-3 font-medium text-gray-900 dark:text-white cursor-pointer">
+            <div className="flex items-center divide-x-2 divide-gray-500">
+              <div className="pr-3 font-medium text-white cursor-pointer">
                 <a href={link}>{name}</a>
               </div>
-              <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+              <div className="pl-3 text-sm font-light text-gray-400">
                 {`${role} at ${organization}`}
               </div>
             </div>
