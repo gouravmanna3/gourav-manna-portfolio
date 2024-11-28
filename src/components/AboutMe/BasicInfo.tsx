@@ -5,15 +5,16 @@ const BasicInfo = () => {
     <div className="py-4 h-[430px] text-white">
       <div className="md:leading-6 text-[12px] md:text-base text-justify">
         I'm Gourav Manna, a graduate student in computer science, currently
-        based in Denver, Colorado. I am a full-stack developer with three years
-        of experience and expertise knowledge in JavaScript, Python and related
-        technologies. I have a proven track record of solving complex technical
-        issues, optimizing website performance, and collaborating seamlessly
-        with cross-functional teams. My passion lies in creating visually
-        captivating and user-friendly interfaces that enhance engagement, as
-        well as developing efficient and scalable backend solutions. I am
-        dedicated to delivering high-quality software solutions while
-        continuously expanding my knowledge of new technologies. <br /> <br />
+        based in Boston, Massachusetts. I am a full-stack developer with three
+        years of experience and expertise knowledge in JavaScript, Python and
+        related technologies. I have a proven track record of solving complex
+        technical issues, optimizing website performance, and collaborating
+        seamlessly with cross-functional teams. My passion lies in creating
+        visually captivating and user-friendly interfaces that enhance
+        engagement, as well as developing efficient and scalable backend
+        solutions. I am dedicated to delivering high-quality software solutions
+        while continuously expanding my knowledge of new technologies. <br />{" "}
+        <br />
         When I'm not at the computer, I'm usually working out, listening to
         podcast, cooking or hanging out with my family/friends.
       </div>

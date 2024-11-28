@@ -21,6 +21,26 @@ const Experience = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#3D9970", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid #3D9970" }}
+            date="Nov 2024 - Present"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<MdOutlineWork />}
+          >
+            <img
+              className="md:h-12 w-40 md:w-48 mb-4 mx-auto"
+              src={intralinks}
+              alt="intralinks_logo"
+            />
+            <h3 className="vertical-timeline-element-title text-[17px] md:text-xl">
+              Software Engineer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Waltham, Massachusetts
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "#3D9970", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid #3D9970" }}
             date="Dec 2021 - July 2022"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<MdOutlineWork />}

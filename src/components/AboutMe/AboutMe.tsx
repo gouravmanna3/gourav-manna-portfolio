@@ -33,14 +33,14 @@ const AboutMe = () => {
             alt="my_photo"
             className="relative md:h-72 w-56 h-56 md:w-72 rounded-full"
           />
-          <img
+          {/* <img
             src={openToWork}
             alt="my_photo"
             className="absolute top-0 h-auto w-56 md:w-72 "
-          />
-          <span className="mt-4 absolute text-base font-medium text-yellow-400 text-center">
-            /* Looking for a job and would greatly appreciate any referrals */
-          </span>
+          /> */}
+          {/* <span className="mt-4 absolute text-base font-medium text-yellow-400 text-center">
+            Looking for a job and would greatly appreciate any referrals 
+          </span> */}
         </motion.div>
         <motion.div
           variants={fadeIn("left", 0.3)}

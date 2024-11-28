@@ -75,7 +75,7 @@ const ContactMe = () => {
               <div>+1 720-813-3358</div>
             </div>
             <div className="flex items-center gap-2">
-              <FaLocationDot /> <div>Colorado, United States</div>
+              <FaLocationDot /> <div>Massachusetts, United States</div>
             </div>
           </div>
         </div>
