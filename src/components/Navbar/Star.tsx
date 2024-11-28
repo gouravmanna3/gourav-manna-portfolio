@@ -43,7 +43,7 @@ const Star = () => {
       >
         {starClicked ? <FaStar /> : <FaRegStar />}
         Star
-        <span className="inline-flex items-center justify-center w-4 h-4 ms-1 p-2 md:p-3 text-xs font-semibold text-slate-800 bg-blue-200 rounded-full">
+        <span className="inline-flex items-center justify-center w-8 h-5 ms-1 p-2 md:p-3 text-xs font-semibold text-slate-800 bg-blue-200 rounded-full">
           {starCount}
         </span>
       </button>
